@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #171717;
+  padding-bottom: 20px;
+  padding-top: 2px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  color: gray;
+  font-size: 4rem;
+}
+
+h1:hover {
+  color: white;
+}
+
+.nav > div {
+  display: flex;
+  gap: 20px;
+  font-size: x-large;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 8rem;
+}
+
+.title > p {
+  color: gray;
+  font-size: x-large;
+}
+
+.main > div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid grey;
+  padding-bottom: 8px;
+  margin-top: 5px;
+}
+
+.text {
+  color: white;
+  font-size: xx-large;
+}
+.date {
+  color: gray;
+  font-size: large;
+}
+.date:hover {
+  color: white;
+}
+
+footer {
+  color: rgb(203, 202, 202);
+  margin-top: 40px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav > div {
+    margin-top: 10px;
+    gap: 10px;
+    font-size: large;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  .main > div {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .title > p {
+    font-size: medium;
+  }
+
+  .text {
+    font-size: large;
+  }
+
+  .date {
+    font-size: small;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav > div {
+    font-size: medium;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  .text {
+    font-size: medium;
+  }
+}
